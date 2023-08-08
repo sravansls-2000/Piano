@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #FEFF86;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height:100vh;
+}
+
+
+.container{
+    display: flex;
+}
+.container .piano-keys{
+cursor: pointer;
+position: relative;
+text-transform: capitalize;
+
+}
+.white{
+    background-color: white;
+    width:70px;
+    height: 230px;
+    border: 1px solid black;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+  
+}
+.black{
+    background-color: black;
+    color:white ;
+    margin: 0 -22px 0 -22px;
+    width:44px;
+    z-index: 2;
+    height: 144px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px;
+}
+
+.piano-keys  span{
+  
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 2px;
+}
+
+header{
+    text-align: center;
+}
+
+footer{
+    margin-top: 100px;
+  text-align: center;
+}
