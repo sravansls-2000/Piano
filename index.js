@@ -5,9 +5,9 @@ for(var i=0 ;i<numberOfButtons;i++){
  
  Buttons[i].addEventListener("click",function(){
     var buttonHtml = this.textContent;
-    console.log("this should be clicking function",buttonHtml)
+//     console.log("this should be clicking function",buttonHtml)
   makeSound(buttonHtml)
-//   buttonAnimation(buttonHtml)
+  buttonAnimation(buttonHtml)
 
 })
 }
@@ -16,14 +16,14 @@ document.addEventListener('keydown',function(e){
 var keyPress =e.key;
 console.log(keyPress)
 makeSound(keyPress);
-// buttonAnimation(keyPress)
+buttonAnimation(keyPress)
 })
 
 function buttonAnimation(key){
 var action = document.querySelector("."+key)
-action.classList.add("pressed");
+action.classList.add("clicked");
 setTimeout(() => {
-action.classList.remove("pressed");
+action.classList.remove("clicked");
     
 }, 100);
 }
